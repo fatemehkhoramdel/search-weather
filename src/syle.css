@@ -1,0 +1,41 @@
+Body {
+  background: #f5f8fb;
+  margin-top: 50px;
+  display: block;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0249ff;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+h2 {
+  color: grey;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+.weatherco {
+  color: #ffc107;
+}
+h5,
+h6 {
+  text-align: center;
+}
+
+.sundisplay {
+  font-size: 50px;
+  margin-top: 30px;
+}
+.distance {
+  margin: 20px;
+}
+.buttomcolor {
+  background: #ba68c8 !important;
+  border: #ba68c8 !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  margin-left: 30px !important;
+}
