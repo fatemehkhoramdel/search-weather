@@ -23,7 +23,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <input
+          <!-- <input
             type="text"
             class="form-control"
             id="inputcity"
@@ -34,22 +34,56 @@
         <div class="col">
           <button type="submit" class="btn btn-primary mb-3 buttomcolor">
             Search
-          </button>
+          </button> -->
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+
+                  class="form-control btn btn-primary shadow-sm w-100 buttomcolor"
+                />
+
+          </form>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h1>
+          <ul>
+            <li id="city-name" class="topmargin listyle">
+              Mashhad, Razavi Khorasan
+            </li>
+            <li id="country-name" class="listyle">
+              Province, Iran
+            </li>
+            <li id="temp-city" class="tempstyle">
+              3°C|°F
+            </li>
+          </ul>
+          <!-- <h1 id="city-name">
             Mashhad, Razavi Khorasan
             <br />
             Province, Iran
-          </h1>
-          <h2>3°C|°F</h2>
+          </h1> 
+          <h2>3°C|°F</h2> -->
         </div>
         <div class="col">
           <h2>
             Sun
-            <div id="date-link"></div>
+            <div id="date-link">
+              2/21/2023
+            </div>
 
             <div class="weatherco">Sunny</div>
           </h2>
@@ -57,9 +91,9 @@
         <div class="col sundisplay">&#x2600;</div>
       </div>
       <div class="container">
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-          <div class="col mt-5">
-            <div class="p-3 border bg-light">
+        <div class="row row-eq-height row-cols-2 row-cols-lg-5 g-2 g-lg-3 ">
+          <div class="col mt-5 ">
+            <div class="p-3 border bg-light h-100">
               <h5 class="card-title distance">&#x2600;</h5>
               <h6 class="card-subtitle mb-2 text-muted">Thu</h6>
               <div class="row distance">
@@ -70,7 +104,7 @@
             </div>
           </div>
           <div class="col mt-5">
-            <div class="p-3 border bg-light">
+            <div class="p-3 border bg-light h-100">
               <div class="card-body">
                 <h5 class="card-title distance">&#x2600;</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Thu</h6>
@@ -83,7 +117,7 @@
             </div>
           </div>
           <div class="col mt-5">
-            <div class="p-3 border bg-light">
+            <div class="p-3 border bg-light h-100">
               <div class="card-body">
                 <h5 class="card-title distance">&#x26C5;</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Thu</h6>
@@ -96,7 +130,7 @@
             </div>
           </div>
           <div class="col mt-5">
-            <div class="p-3 border bg-light">
+            <div class="p-3 border bg-light h-100">
               <div class="card-body">
                 <h5 class="card-title distance">&#x1F327;</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Thu</h6>
@@ -109,7 +143,7 @@
             </div>
           </div>
           <div class="col mt-5">
-            <div class="p-3 border bg-light">
+            <div class="p-3 border bg-light h-100">
               <div class="card-body">
                 <h5 class="card-title distance">&#x1F329;</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Thu</h6>
