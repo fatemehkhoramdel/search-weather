@@ -36,10 +36,8 @@ function showTemp(response){
   );
   
   console.log(regionNames.of(countryID)); 
-
-  
- 
- 
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].main;
 
 }
 
