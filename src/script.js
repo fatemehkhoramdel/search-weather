@@ -24,12 +24,33 @@ function formatDate(days, months) {
   } ${dateTime.getDate()}, ${dateTime.getFullYear()} ${dateTime.getHours()} : ${dateTime.getMinutes()}`;
 }
 
+// function countryFullName(response){
+//   console.log(response);
+// }
+
+function showTemp(response){
+ console.log(response);
+  let countryID = response.data.sys.country;
+  const regionNames = new Intl.DisplayNames(
+    ['en'], {type: 'region'}
+  );
+  
+  console.log(regionNames.of(countryID)); 
+
+  
+ 
+ 
+
+}
 
 function showCity(event){
   event.preventDefault();
   let city = document.querySelector("#city-name");
   let cityName = document.querySelector("#city-input");
+  let apiKey = "a2d5c141caa760021e618a903bcc320b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${apiKey}`;
   city.innerHTML = cityName.value;
+  axios.get(apiUrl).then(showTemp);
 }
 
 let heading = document.querySelector("#date-link");
@@ -37,5 +58,7 @@ heading.innerHTML= formatDate(days, months);
 console.log(formatDate(days, months));
 let city = document.querySelector("#search-form");
 city.addEventListener("submit", showCity);
+
+
 
 
